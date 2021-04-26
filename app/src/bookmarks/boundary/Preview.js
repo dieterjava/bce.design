@@ -7,10 +7,10 @@ class Preview extends BElement {
         return bookmarks;
     }
     view() {
-        const { bookmark: { label,link }  } = this.state;
+        const { bookmark: { label,link, newfield}  } = this.state;
         return html`
         <div>
-            bookmark: <a href="${link}">${label}</a> (${link})
+            bookmark: <a href="${link}">${label} ${newfield}</a> (${link})
         </div>
         `;
     }
